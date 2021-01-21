@@ -1,0 +1,115 @@
+body {
+  background-color: #d6d6d6;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+.container {
+  user-select: none;
+  width: 400px;
+  height: 600px;
+  margin: 40px auto;
+  background-color: #d4d4d2;
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#display-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 100px;
+  text-align: right;
+}
+
+#clear,
+#equals,
+#decimal {
+  width: 200px;
+  height: 100px;
+  background: #1c1c1c;
+  color: white;
+}
+
+#decimal {
+  width: 100px;
+  box-shadow: -2px -2px 3px #1c1c1c;
+}
+
+#zero {
+  width: 200px !important;
+}
+
+.container :not(#clear):not(#equals):not(#decimal):not(#display-box) {
+  width: 100px;
+  height: 100px;
+  background: #505050;
+  box-shadow: -2px -2px 3px #1c1c1c;
+  color: white;
+}
+
+#add,
+#subtract,
+#multiply,
+#divide {
+  background: #ff9500 !important;
+}
+
+.container div:not(#display-box) {
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+#display {
+  width: 100% !important;
+  height: 60% !important;
+  cursor: auto !important;
+  background-color: #d6d6d6 !important;
+  line-height: 60px !important;
+  color: #000 !important;
+  font-size: 40px;
+  text-align: right !important;
+  padding: 0 10px;
+}
+
+input {
+  width: 100% !important;
+  height: 40% !important;
+  box-shadow: none !important;
+  font-size: 20px;
+  text-align: right !important;
+  padding: 0 15px;
+  border-width: 0px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.container div:not(#display-box):active {
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+}
+
+.author {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#link {
+  text-decoration: none;
+  color: #2c2c2c;
+  text-transform: uppercase;
+}
+
+#link:hover {
+  display: inline-block;
+  border-bottom: 2px solid #ff9500;
+  transition: all 0.2s;
+}
