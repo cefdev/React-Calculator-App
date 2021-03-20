@@ -1,5 +1,6 @@
 {
-  "name": "pics",
+  "name": "react calculator app",
+  "author": "Mounssif Koumila",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
