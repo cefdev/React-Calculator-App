@@ -1,3 +1,7 @@
+# Demo
+Check my project live [HERE](https://cefdev-calculator.netlify.app/)
+
+
 # React Calculator App
 This is a simple arithmetic calculator built with ReactJS and CSS.
 
